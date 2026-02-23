@@ -1,0 +1,16 @@
+{
+  "name": "profile-website",
+  "version": "1.0.0",
+  "description": "Website profile Mochammad Naufal Bagaskara",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": ["profile", "portfolio"],
+  "author": "Mochammad Naufal Bagaskara",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

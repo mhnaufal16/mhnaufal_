@@ -1,0 +1,11 @@
+/* Color Variables */
+:root {
+    --primary: #8B0000;
+    --secondary: #5C0000;
+    --accent: #DC143C;
+    --dark: #1a0000;
+    --light: #ffffff;
+    --gray: #b89090;
+    --maroon: #800000;
+    --burgundy: #6B0000;
+}

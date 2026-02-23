@@ -1,0 +1,25 @@
+/* AOS Animations */
+[data-aos] {
+    opacity: 0;
+    transition: all 0.8s ease;
+}
+
+[data-aos].aos-animate {
+    opacity: 1;
+}
+
+[data-aos="fade-up"] {
+    transform: translateY(50px);
+}
+
+[data-aos="fade-up"].aos-animate {
+    transform: translateY(0);
+}
+
+[data-aos="flip-left"] {
+    transform: rotateY(90deg);
+}
+
+[data-aos="flip-left"].aos-animate {
+    transform: rotateY(0);
+}
