@@ -14,6 +14,13 @@ const portfolioData = {
         images: ['images/ecommerce1.jpg', 'images/ecommerce2.jpg', 'images/ecommerce3.jpg'],
         techStack: ['Laravel', 'Tailwind CSS', 'MySQL', 'PHP', 'Payment Gateway', 'RESTful API']
     },
+    'corporate': {
+        title: 'Corporate Website',
+        subtitle: 'Web Desain | 2024',
+        description: 'Website company profile modern dengan animasi smooth, responsive design, dan CMS integration untuk update konten yang mudah. Desain profesional yang mencerminkan identitas perusahaan dengan user experience yang optimal. Dilengkapi dengan content management system (Contentful) yang memudahkan tim untuk mengupdate konten website tanpa perlu coding. Website ini dibangun dengan teknologi modern Next.js untuk performa yang cepat dan SEO-friendly, serta menggunakan Tailwind CSS untuk styling yang konsisten dan maintainable.',
+        images: ['images/companyprofile1.png', 'images/companyprofile2.png'],
+        techStack: ['Next.js', 'Tailwind CSS', 'Contentful', 'React', 'SEO Optimization', 'Responsive Design']
+    },
     'jejakembun': {
         title: 'Booking Platform - Jejak Embun',
         subtitle: 'Web Application | 2023',
