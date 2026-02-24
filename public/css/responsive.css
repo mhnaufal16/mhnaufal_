@@ -1,45 +1,418 @@
-/* Responsive */
+/* Responsive Design */
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .sidebar {
+        width: 150px;
+        padding: 2rem 1.5rem;
+    }
+    
+    .main-content {
+        margin-left: 150px;
+        padding: 4rem 2rem;
+    }
+    
+    .name {
+        font-size: 2.5rem;
+    }
+}
+
+/* Mobile */
 @media (max-width: 768px) {
     body {
         cursor: auto;
+        padding-bottom: 80px;
     }
     
     .cursor-dot, .cursor-outline {
         display: none;
     }
     
-    .glitch {
+    /* Bottom Navigation */
+    .sidebar {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        top: auto;
+        width: 100%;
+        height: auto;
+        padding: 0.75rem 1rem;
+        background: rgba(26, 0, 0, 0.98);
+        backdrop-filter: blur(20px);
+        border-top: 1px solid var(--border);
+        z-index: 100;
+        box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.5);
+    }
+    
+    .sidebar-content {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .logo {
+        display: none;
+    }
+    
+    .nav-menu {
+        flex-direction: row;
+        gap: 0;
+        flex: 1;
+        justify-content: space-around;
+    }
+    
+    .nav-link {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.25rem;
+        padding: 0.5rem 0.75rem;
+        font-size: 0.7rem;
+    }
+    
+    .nav-link::before {
+        display: none;
+    }
+    
+    .nav-number {
+        display: block;
+        font-size: 0.65rem;
+    }
+    
+    .nav-text {
+        font-size: 0.7rem;
+    }
+    
+    .social-links {
+        display: none;
+    }
+    
+    /* Main Content */
+    .main-content {
+        margin-left: 0;
+        margin-bottom: 0;
+        padding: 2rem 1.5rem 3rem;
+    }
+    
+    .section {
+        margin-bottom: 4rem;
+    }
+    
+    /* Typography */
+    .name {
         font-size: 2rem;
+        line-height: 1.2;
     }
     
-    .subtitle {
-        font-size: 1.2rem;
+    .title {
+        font-size: 1rem;
+        margin-bottom: 2rem;
     }
     
-    .nav-links {
-        gap: 1rem;
-        font-size: 0.9rem;
-    }
-    
-    .about-content {
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
-    
-    .stats {
-        grid-template-columns: 1fr;
+    .about-text p {
+        font-size: 0.95rem;
+        margin-bottom: 1.25rem;
     }
     
     .section-title {
-        font-size: 2rem;
+        font-size: 1.75rem;
+        gap: 1rem;
+        margin-bottom: 2rem;
     }
     
     .title-line {
-        width: 50px;
+        width: 30px;
     }
     
+    /* Experience */
+    .experience-item {
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+        padding: 1.25rem;
+        margin-bottom: 1rem;
+    }
+    
+    .experience-period {
+        padding-top: 0;
+        font-size: 0.8rem;
+        color: var(--accent);
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+    }
+    
+    .experience-role {
+        font-size: 1.1rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .experience-company {
+        font-size: 0.9rem;
+        margin-bottom: 0.25rem;
+    }
+    
+    .experience-location {
+        font-size: 0.8rem;
+        margin-bottom: 0.75rem;
+    }
+    
+    .experience-description {
+        font-size: 0.9rem;
+        margin-bottom: 0.75rem;
+    }
+    
+    .experience-tasks {
+        margin: 0.75rem 0 1rem;
+    }
+    
+    .experience-tasks li {
+        font-size: 0.85rem;
+        padding-left: 1.25rem;
+        margin-bottom: 0.5rem;
+        line-height: 1.5;
+    }
+    
+    /* Projects */
+    .project-card {
+        padding: 1.25rem;
+        margin-bottom: 0.75rem;
+    }
+    
+    .project-title {
+        font-size: 1.05rem;
+    }
+    
+    .project-description {
+        font-size: 0.9rem;
+    }
+    
+    /* Portfolio */
+    .portfolio-intro {
+        font-size: 0.95rem;
+        margin-bottom: 2rem;
+    }
+    
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .portfolio-image {
+        height: 220px;
+    }
+    
+    .portfolio-content {
+        padding: 1.25rem;
+    }
+    
+    .portfolio-title {
+        font-size: 1.15rem;
+        margin-bottom: 0.75rem;
+    }
+    
+    .portfolio-description {
+        font-size: 0.9rem;
+        margin-bottom: 0.75rem;
+    }
+    
+    .portfolio-meta {
+        margin-bottom: 0.75rem;
+    }
+    
+    .portfolio-category,
+    .portfolio-year {
+        font-size: 0.7rem;
+    }
+    
+    /* Tech Tags */
+    .tech-tags {
+        gap: 0.4rem;
+    }
+    
+    .tech-tag {
+        font-size: 0.7rem;
+        padding: 0.3rem 0.65rem;
+    }
+    
+    /* Contact */
+    .contact-subtitle {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+    
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .contact-card {
+        padding: 2rem 1.5rem;
+    }
+    
+    .contact-section {
+        padding: 2rem 1.5rem;
+    }
+    
+    .contact-title {
+        font-size: 1.25rem;
+    }
+    
+    .contact-description {
+        font-size: 0.95rem;
+    }
+    
+    .contact-link {
+        padding: 0.85rem;
+        font-size: 0.9rem;
+    }
+    
+    /* Modal */
+    .modal-content {
+        padding: 1.5rem;
+        margin: 1rem;
+        max-height: 90vh;
+        overflow-y: auto;
+    }
+    
+    .modal-header {
+        margin-bottom: 1.5rem;
+        padding-right: 3rem;
+    }
+    
+    .modal-title {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .modal-subtitle {
+        font-size: 0.9rem;
+    }
+    
+    .modal-description {
+        font-size: 0.9rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .modal-gallery {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .modal-gallery-item img {
+        height: 200px;
+    }
+    
+    .modal-tech-stack h3 {
+        font-size: 1.15rem;
+        margin-bottom: 0.75rem;
+    }
+    
+    /* Image Viewer */
+    .image-viewer-nav {
+        width: 45px;
+        height: 45px;
+        font-size: 1.5rem;
+    }
+    
+    .image-viewer-prev {
+        left: 0.5rem;
+    }
+    
+    .image-viewer-next {
+        right: 0.5rem;
+    }
+    
+    .image-viewer-close {
+        width: 50px;
+        height: 50px;
+        top: 1rem;
+        right: 1rem;
+        font-size: 2rem;
+    }
+    
+    /* Footer */
     .footer-content {
         flex-direction: column;
         text-align: center;
+        gap: 1rem;
+        padding-bottom: 1rem;
+    }
+    
+    .social-icon {
+        font-size: 0.9rem;
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+    .main-content {
+        padding: 1.5rem 1rem 2.5rem;
+    }
+    
+    .name {
+        font-size: 1.75rem;
+    }
+    
+    .title {
+        font-size: 0.95rem;
+    }
+    
+    .section-title {
+        font-size: 1.5rem;
+    }
+    
+    .title-line {
+        display: none;
+    }
+    
+    .experience-item {
+        padding: 1rem;
+    }
+    
+    .experience-role {
+        font-size: 1rem;
+    }
+    
+    .experience-tasks li {
+        font-size: 0.8rem;
+    }
+    
+    .portfolio-title {
+        font-size: 1.05rem;
+    }
+    
+    .portfolio-image {
+        height: 180px;
+    }
+    
+    .portfolio-meta {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+    
+    .modal-title {
+        font-size: 1.25rem;
+    }
+    
+    .modal-close {
+        width: 40px;
+        height: 40px;
+        top: 1rem;
+        right: 1rem;
+    }
+    
+    .tech-tag {
+        font-size: 0.65rem;
+        padding: 0.25rem 0.5rem;
+    }
+    
+    .nav-number {
+        font-size: 0.6rem;
+    }
+    
+    .nav-text {
+        font-size: 0.65rem;
     }
 }
