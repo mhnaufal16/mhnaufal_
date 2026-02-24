@@ -13,6 +13,13 @@ const portfolioData = {
         description: 'Platform e-commerce full-featured dengan fitur shopping cart, checkout system, payment gateway integration, product management, dan admin dashboard. Sistem inventory management yang terintegrasi untuk tracking stok produk secara real-time. Dilengkapi dengan fitur user authentication, product reviews, wishlist, order tracking, dan reporting system yang komprehensif.',
         images: ['images/ecommerce1.jpg', 'images/ecommerce2.jpg', 'images/ecommerce3.jpg'],
         techStack: ['Laravel', 'Tailwind CSS', 'MySQL', 'PHP', 'Payment Gateway', 'RESTful API']
+    },
+    'jejakembun': {
+        title: 'Booking Platform - Jejak Embun',
+        subtitle: 'Web Application | 2023',
+        description: 'Platform booking online untuk villa dan penginapan Jejak Embun dengan sistem reservasi real-time. Fitur lengkap meliputi pencarian villa berdasarkan tanggal dan kapasitas, booking calendar, payment gateway integration, konfirmasi otomatis via email/WhatsApp, dan admin dashboard untuk management reservasi, pricing, dan availability. Sistem ini memudahkan customer untuk melakukan booking secara online dan membantu owner dalam mengelola properti.',
+        images: ['images/jejakembun1.png', 'images/jejakembun2.png', 'images/jejakembun3.png'],
+        techStack: ['Vue.js', 'Express.js', 'Node.js', 'MySQL', 'Payment Gateway', 'RESTful API']
     }
 };
 

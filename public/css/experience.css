@@ -1,0 +1,35 @@
+/* Experience Tasks List */
+.experience-company {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+    margin-bottom: 0.25rem;
+}
+
+.experience-location {
+    font-size: 0.875rem;
+    color: var(--text-muted);
+    margin-bottom: 0.75rem;
+}
+
+.experience-tasks {
+    list-style: none;
+    margin: 1rem 0;
+    padding: 0;
+}
+
+.experience-tasks li {
+    color: var(--text-secondary);
+    padding-left: 1.5rem;
+    margin-bottom: 0.5rem;
+    position: relative;
+    line-height: 1.6;
+}
+
+.experience-tasks li::before {
+    content: '▹';
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+    font-size: 1.2rem;
+}
