@@ -33,3 +33,34 @@
     color: var(--accent);
     font-size: 1.2rem;
 }
+
+.company-links {
+    display: flex;
+    gap: 0.75rem;
+    margin-bottom: 0.5rem;
+}
+
+.company-link {
+    color: var(--text-muted);
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--border);
+}
+
+.company-link:hover {
+    color: var(--accent);
+    background: rgba(239, 68, 68, 0.1);
+    border-color: var(--accent);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px var(--accent-glow);
+}
+
+.company-link svg {
+    stroke-width: 2;
+}
